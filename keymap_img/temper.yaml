@@ -2,7 +2,16 @@ layout: {zmk_keyboard: temper}
 layers:
   default:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - ['&mo LGUI A', '&mo LALT S', '&mo LSHFT D', '&mo LCTRL F', G, H, '&mo RCTRL J', '&mo RSHFT K', '&mo RALT L', '&mo RGUI SEMI']
+  - - {t: A, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: D, h: ⇧}
+    - {t: F, h: ⌃}
+    - G
+    - H
+    - {t: J, h: ⌃}
+    - {t: K, h: ⇧}
+    - {t: L, h: ⎇}
+    - {t: ;, h: ⌘, s: ':'}
   - - Z
     - X
     - C
