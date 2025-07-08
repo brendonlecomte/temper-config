@@ -67,7 +67,7 @@ layers:
     - ↓
     - ↑
     - →
-    - {t: ESC, s: '`'}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
