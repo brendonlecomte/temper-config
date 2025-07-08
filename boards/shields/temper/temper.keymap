@@ -10,10 +10,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define GAME 1
-#define NUM 2
-#define NAV 3
-#define FUN 4
+#define NUM 1
+#define NAV 2
+#define FUN 3
 
 # define ______ &trans
 
@@ -26,43 +25,6 @@
         };
     };
     behaviors {
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-        super_bspc: super_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        smart_shft: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT)>;
-        };
-        comma_semi: comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT)>;
-        };
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT)>;
-        };
-        qmrk_excl: qmrk_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
-            mods = <(MOD_LSFT)>;
-        };
         slh_morph: slh_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -82,26 +44,13 @@
                 default_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y       &kp APOS   
+        &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+     &mo LGUI A     &mo LALT S   &mo LSHFT D   &mo LCTRL F      &kp G             &kp H      &mo RCTRL J   &mo RSHFT K   &mo RALT L    &mo RGUI SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
+        &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp LGUI      &mo NUM     &smart_shft        &kp SPACE      &mo NAV     &to DEFAULT
-//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-                        >;
-                };
-                game_layer {
-                        bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp TAB       &kp Q         &kp W         &kp E         &kp R              ______       ______        ______        ______        ______  
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LSHFT      &kp A         &kp S         &kp D         &kp F              ______       ______        ______        ______        ______
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LCTRL      &kp Z         &kp X         &kp C         &kp V              ______       ______        ______        ______        ______
-// ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    &kp ESC       ______      &kp SPACE            ______       ______        ______
+                                   &kp LGUI      &mo NUM       &kp ESC          &kp SPACE      &kp ENTER    &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
