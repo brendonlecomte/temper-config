@@ -25,7 +25,7 @@ layers:
   - - ⌘
     - num
     - ESC
-    - SPACE
+    - {t: SPACE, s: BSCP}
     - ENTER
     - {t: default, h: toggle}
   num:
