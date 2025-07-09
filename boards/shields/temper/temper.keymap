@@ -29,6 +29,12 @@
             bindings = <&kp AMPS>, <&kp PIPE>;
             mods = <(MOD_LSFT)>;
         };
+        space_morph: space_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp BSCP>;
+            mods = <(MOD_LSFT)>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -42,7 +48,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M       &kp COMMA      &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp LGUI      &mo NUM       &kp ESC          &kp SPACE      &kp ENTER    &to DEFAULT
+                                   &kp LGUI      &mo NUM       &kp ESC         &space_morph   &kp ENTER    &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
