@@ -22,10 +22,10 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - ⌘
+  - - nav
     - num
     - ESC
-    - {t: SPACE, s: BSCP}
+    - SPACE
     - ENTER
     - {t: default, h: toggle}
   num:
@@ -87,9 +87,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - BSPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
