@@ -22,12 +22,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - nav
-    - num
-    - ESC
-    - SPACE
-    - ENTER
-    - {t: default, h: toggle}
+  - [nav, num, ESC, SPACE, ENTER, lang]
   num:
   - - '~'
     - '@'
@@ -93,3 +88,40 @@ layers:
     - BSPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+  lang:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DEL
+    - HOME
+    - END
+    - ↹
+    - BSPC
+  - - {t: ⇧, h: sticky}
+    - {t: ⌃, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: '"', h: sticky}
+    - ''''
+    - ←
+    - ↓
+    - ↑
+    - →
+    - '"'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '!'
+    - {t: ▽, type: trans}
+    - RET
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - {t: ▽, type: trans}
+    - {type: held}
