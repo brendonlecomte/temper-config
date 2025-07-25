@@ -22,7 +22,12 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - [nav, num, ESC, SPACE, ENTER, lang]
+  - - {t: nav, h: sticky}
+    - num
+    - {t: ESC, h: dev}
+    - SPACE
+    - ENTER
+    - {t: lang, h: sticky}
   num:
   - - '~'
     - '@'
@@ -61,24 +66,24 @@ layers:
     - HOME
     - END
     - ↹
-    - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
+    - {t: ▽, type: trans}
+  - - {t: ⌘, h: sticky}
     - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
+    - {t: ⇧, h: sticky}
+    - {t: ⌃, h: sticky}
     - {t: ▽, type: trans}
     - ←
     - ↓
     - ↑
     - →
-    - '"'
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - RET
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -99,16 +104,7 @@ layers:
     - END
     - ↹
     - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: '"', h: sticky}
-    - ''''
-    - ←
-    - ↓
-    - ↑
-    - →
-    - '"'
+  - [⇧, ⌃, ⎇, '"', '''', ←, ↓, ↑, →, '"']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -125,3 +121,40 @@ layers:
     - BSPC
     - {t: ▽, type: trans}
     - {type: held}
+  dev:
+  - - '~'
+    - '@'
+    - '{'
+    - '}'
+    - '%'
+    - ^
+    - '{'
+    - '}'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - ^
+    - '#'
+    - (
+    - )
+    - $
+    - '*'
+    - (
+    - )
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: '&', s: '|'}
+    - <
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - '>'
+    - '&'
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - '0'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
