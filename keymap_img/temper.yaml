@@ -164,6 +164,6 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-    - '0'
+    - BSPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
