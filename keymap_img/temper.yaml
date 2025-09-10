@@ -22,9 +22,9 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: /, s: \}
-  - - {t: nav, h: sticky}
-    - num
-    - {t: ESC, h: dev}
+  - - {t: num, h: sticky}
+    - dev
+    - {t: ESC, h: nav}
     - SPACE
     - ENTER
     - {t: lang, h: sticky}
@@ -59,8 +59,8 @@ layers:
     - '2'
     - '3'
     - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
+  - - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '0'
     - {t: ▽, type: trans}
@@ -96,9 +96,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - BSPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -131,26 +131,26 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
   dev:
-  - - '~'
+  - - '!'
     - '@'
-    - '{'
-    - '}'
+    - '#'
+    - $
     - '%'
     - ^
     - '{'
     - '}'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - ^
-    - '#'
-    - (
+  - - {t: '-', s: _}
+    - +
+    - {t: '=', s: +}
     - )
-    - $
+    - '~'
     - '*'
     - (
     - )
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - _
   - - {t: '&', s: '|'}
     - <
     - {t: '[', s: '{'}
@@ -159,11 +159,11 @@ layers:
     - '&'
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
-    - {t: ▽, type: trans}
+    - {t: ., s: '>'}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
     - BSPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
