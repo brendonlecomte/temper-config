@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-jdefine NUM 1
+#define NUM 1
 #define NAV 2
 #define LANG 3
 #define DEV 4
 
-# define ______ &trans
+#define ______ &trans
 
 / {
     behaviors {
