@@ -112,18 +112,27 @@ layers:
     - HOME
     - END
     - ↹
-    - BSPC
-  - [⇧, ⌃, ⎇, '"', '''', ←, ↓, ↑, →, '"']
-  - - {t: ▽, type: trans}
+    - BT CLR ALL
+  - - ⇧
+    - {t: '`', s: '~'}
+    - '"'
+    - ''''
     - {t: ▽, type: trans}
+    - ←
+    - ↓
+    - ↑
+    - →
+    - '"'
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '?'
     - '!'
     - {t: ▽, type: trans}
-    - RET
+    - BT
+    - BT PRV
+    - BT NXT
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - BT CLR
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
